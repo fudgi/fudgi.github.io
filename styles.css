@@ -1,6 +1,6 @@
 .second-slide.background{
     color: white;
-    background: url(images/deep-in-sea.png) no-repeat;
+    background: url(images/deep-in-sea.jpg) no-repeat;
     background-position: center center;
     background-size: contain;
 }
@@ -183,7 +183,7 @@ code {
 }
 .first-slide.background{
     color: #0d319c;
-    background: url(images/iceberg.png) no-repeat;
+    background: url(images/iceberg.jpg) no-repeat;
     background-position: center center;
     background-size: contain;
 }
@@ -269,7 +269,7 @@ html, body, #root{
   overflow: hidden;
 }.third-slide.background{
     color: white;
-    background: url(images/deeper-sea.svg) no-repeat;
+    background: url(images/deeper-sea.jpg) no-repeat;
     background-position: center center;
     background-size: contain;
 }
