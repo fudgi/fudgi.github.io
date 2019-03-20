@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Gotham Pro Regular';
+  src: url(./fonts/GothamPro.eot);
+  src: url(./fonts/GothamPro.eot?#iefix) format('embedded-opentype'),
+  url(./fonts/GothamPro.woff) format('woff'),
+  url(./fonts/GothamPro.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Regular';
+  src: url(./fonts/Lato-Regular.eot);
+  src: url(./fonts/Lato-Regular.eot?#iefix) format('embedded-opentype'),
+  url(./fonts/Lato-Regular.woff) format('woff'),
+  url(./fonts/Lato-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro Light';
+  src: url(./fonts/GothamPro-Light.eot);
+  src: url(./fonts/GothamPro-Light.eot?#iefix) format('embedded-opentype'),
+  url(./fonts/GothamPro-Light.woff) format('woff'),
+  url(./fonts/GothamPro-Light.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root{
+  height: 100%;
+  background-color: #232498;
+  overflow: hidden;
+}
+
+.container{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: all 1s ease-in-out;
+}
+
+.slide{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}

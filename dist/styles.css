@@ -1,0 +1,450 @@
+.second-slide.background{
+    color: white;
+    background: url(images/deep-in-sea.png) no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+  
+.second-slide .title {
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Gotham Pro Light';
+    font-weight: 100;
+    font-size: 3em;
+    line-height: 1.3em;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+
+.second-slide .container-for-move{
+    position: relative;
+    transition: all 1.25s
+}
+
+.second-slide .container-for-move.top{
+    margin-top: -40%;
+}
+.second-slide .container-for-move.down{
+    margin-top: 40%;
+}
+
+.second-slide .ice{
+    position: absolute;
+}
+  
+.second-slide .ice1{
+    left: 210px; 
+    top: 440px; 
+    width: 12%;
+}
+.second-slide .ice2{
+    left: 80px; 
+    top: 145px; 
+    width: 4.5%;
+    transform: rotate(-40deg);
+    filter: brightness(140%) opacity(0.8);
+}
+.second-slide .ice3{
+    right: 230px; 
+    top: 580px; 
+    width: 7%;
+    filter: blur(4px) brightness(130%);
+    transform: rotate(-80deg);
+}
+
+.second-slide .ice4{
+    right: -70px; 
+    top: 50px; 
+    width: 22%;
+    filter: blur(3px) brightness(130%);
+    transform: rotate(-40deg);
+}body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.position-selector{
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 2.5%;
+    transform: translate(0, -50%);
+}
+
+.position-selector .position{
+    background-color: white;
+    border-radius: 50%;
+    width: 0.9em;
+    height: 0.9em;
+    margin-top: 0.3em;
+    transition: all 1s ease;
+}
+
+.position-selector .active{
+    background-color: #f78b1f;
+}.down-pointer-container{
+  opacity: 1;
+  display: block;
+  transition: all 0.5s;
+  pointer-events: all;
+  cursor: pointer;
+}
+.down-pointer{
+    z-index:1;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    text-align: center;
+  }
+  .down-pointer .text{
+    font-size: 1.25em;
+  }
+  .down-pointer .arrow {
+    transform: scale(0.5);
+  }
+  
+  .down-light{
+    position: absolute;
+    bottom: -7%;
+    width: 100%;
+    height: 5%;
+  }
+  .light {
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+    background-color: #f78b1f;
+    border-radius: 50%;
+    height: 180%;
+  }
+  .light:first-child{
+    box-shadow: 0px 40px 50px 100px #f78b1f;
+    width: 60%;
+  }
+  .light:last-child{
+    box-shadow: 0px -20px 50px 100px #f78b1f;
+    width: 15%;
+  }
+
+  .hide{
+    pointer-events: none;
+    cursor: default;
+    opacity: 0;
+  }.expending_point{
+  border: 2px solid #d55c2e;
+  border-radius: 50%;
+  position: absolute;
+}
+.inner_point{
+  animation: expand  2s infinite linear;
+  animation-delay: 1s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.inner_second_point{
+  animation: expand 2s infinite linear;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+@keyframes expand {
+  from{
+    width: 0%;
+    height: 0%;
+    background-color: #daaf5e;
+    border: 2px solid #daaf5e00;
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    background-color: #daaf5e00;
+    border: 2px solid #d55d2ed2;
+    }
+}
+.first-slide.background{
+    color: #0d319c;
+    background: url(images/iceberg.png) no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+  
+.first-slide .title{
+    position: absolute;
+    top: 130px;
+    left: 80px;
+    font-family: 'Gotham Pro Regular';
+    font-weight: 500;
+    font-size: 3em;
+    letter-spacing: 0.5px;
+}
+  
+.first-slide .point-titles{
+    font-family: 'Lato Regular';
+    font-size: 1.25em;
+    position: absolute;
+}
+.first-slide .container-for-move{
+    position: relative;
+    transition: all 1.25s
+}
+
+.first-slide .container-for-move.top{
+    margin-top: -40%;
+}
+.first-slide .container-for-move.down{
+    margin-top: 40%;
+}@font-face {
+  font-family: 'Gotham Pro Regular';
+  src: url(fonts/GothamPro.eot);
+  src: url(fonts/GothamPro.eot?#iefix) format('embedded-opentype'),
+  url(fonts/GothamPro.woff) format('woff'),
+  url(fonts/GothamPro.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Regular';
+  src: url(fonts/Lato-Regular.eot);
+  src: url(fonts/Lato-Regular.eot?#iefix) format('embedded-opentype'),
+  url(fonts/Lato-Regular.woff) format('woff'),
+  url(fonts/Lato-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro Light';
+  src: url(fonts/GothamPro-Light.eot);
+  src: url(fonts/GothamPro-Light.eot?#iefix) format('embedded-opentype'),
+  url(fonts/GothamPro-Light.woff) format('woff'),
+  url(fonts/GothamPro-Light.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root{
+  height: 100%;
+  background-color: #232498;
+  overflow: hidden;
+}
+
+.container{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: all 1s ease-in-out;
+}
+
+.slide{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}.third-slide.background{
+    color: white;
+    background: url(images/deeper-sea.svg) no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.tab-container{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 300%;
+    transition: all 0.7s ease-out;
+}
+
+.tab-container.top{
+    margin-top: -40%;
+}
+.tab-container.down{
+    margin-top: 40%;
+}
+
+.tab{
+    width: 100%;
+    position: relative;
+}.progress-bar{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-50%);
+}
+.progress-bar .progress{
+    width: 98%;
+}
+.progress-bar .polygon{
+    width: 7%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 20px;
+    top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.progress-bar .polygon.active{
+    transition: all 0s;
+}
+.progress-bar .years {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    font-family: 'Gotham Pro Regular';
+    font-size: 1.3em;
+}
+
+
+.tab_1 .tab_title{
+    position: absolute;
+    top: 15%;
+    left: 100px;
+    font-family: 'Gotham Pro Light';
+    font-weight: 100;
+    font-size: 2em;
+}
+  
+.tab_1 .scheme{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 63%;
+    transform: translate(-50%, -50%);
+}
+
+.tab_1 .ice{
+    position: absolute;
+    filter: opacity(0.6);
+}
+  
+.tab_1 .ice1{
+    left:0px; 
+    bottom:20px; 
+    width:23%;
+    filter: blur(3px);
+    transform: rotate(-40deg);
+}
+.tab_1 .ice2{
+    left:630px; 
+    top:190px; 
+    width:12%;
+    transform: rotate(30deg);
+}
+.tab_1 .ice3{
+    right: 80px; 
+    top:110px; 
+    width:4%;
+    filter:opacity(0.6) brightness(120%);
+    transform: rotate(-55deg);
+}.tab_2 .tab_title{
+    position: absolute;
+    top: 15%;
+    left: 100px;
+    font-family: 'Gotham Pro Light';
+    font-weight: 100;
+    font-size: 2em;
+}
+  
+.tab_2 .scheme{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-50%, -50%);
+}
+.tab_2 .ice{
+    position: absolute;
+    filter: opacity(0.6);
+}
+
+.tab_2 .ice1{
+    left: 30px; 
+    bottom: 420px; 
+    width: 13%;
+    transform: rotate(20deg);
+    
+}
+.tab_2 .ice2{
+    left: 530px; 
+    top: 100px; 
+    width: 4%;
+    transform: rotate(-60deg);
+    filter: brightness(130%) opacity(0.6);
+}
+.tab_2 .ice3{
+    right: 0px; 
+    bottom: 0px; 
+    width: 27%;
+    filter: blur(3px) opacity(0.6) brightness(130%);
+    transform: rotate(-35deg);
+}.tab_3 .tab_title{
+    position: absolute;
+    top: 15%;
+    left: 100px;
+    font-family: 'Gotham Pro Light';
+    font-weight: 100;
+    font-size: 2em;
+}
+  
+.tab_3 .scheme{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.tab_3 .ice{
+    position: absolute;
+    filter: opacity(0.6);
+}
+
+.tab_3 .ice1{
+    left: 20px; 
+    top: 113px; 
+    width: 4.5%;
+    transform: rotate(-50deg);
+    filter: opacity(0.4) brightness(110%);
+    
+}
+.tab_3 .ice2{
+    left: 160px; 
+    bottom: -10px; 
+    width: 23%;
+    transform: rotate(-65deg);
+    filter: opacity(0.6) blur(3px) brightness(110%);
+}
+.tab_3 .ice3{
+    right: -20px; 
+    top: 210px; 
+    width: 12%;
+    transform: rotate(25deg);
+}
+/*# sourceMappingURL=styles.css.map*/

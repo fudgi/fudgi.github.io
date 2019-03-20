@@ -1,0 +1,42 @@
+.tab_2 .tab_title{
+    position: absolute;
+    top: 15%;
+    left: 100px;
+    font-family: 'Gotham Pro Light';
+    font-weight: 100;
+    font-size: 2em;
+}
+  
+.tab_2 .scheme{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-50%, -50%);
+}
+.tab_2 .ice{
+    position: absolute;
+    filter: opacity(0.6);
+}
+
+.tab_2 .ice1{
+    left: 30px; 
+    bottom: 420px; 
+    width: 13%;
+    transform: rotate(20deg);
+    
+}
+.tab_2 .ice2{
+    left: 530px; 
+    top: 100px; 
+    width: 4%;
+    transform: rotate(-60deg);
+    filter: brightness(130%) opacity(0.6);
+}
+.tab_2 .ice3{
+    right: 0px; 
+    bottom: 0px; 
+    width: 27%;
+    filter: blur(3px) opacity(0.6) brightness(130%);
+    transform: rotate(-35deg);
+}

@@ -1,0 +1,30 @@
+.progress-bar{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-50%);
+}
+.progress-bar .progress{
+    width: 98%;
+}
+.progress-bar .polygon{
+    width: 7%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 20px;
+    top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.progress-bar .polygon.active{
+    transition: all 0s;
+}
+.progress-bar .years {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    font-family: 'Gotham Pro Regular';
+    font-size: 1.3em;
+}
+
